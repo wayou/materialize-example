@@ -35,6 +35,7 @@ angular
     });
 
 function iniMD() {
+    Waves.displayEffect();
     $('.dropdown-button').dropdown({
         'hover': false
     });

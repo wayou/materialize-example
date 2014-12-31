@@ -1,25 +1,28 @@
 <div class="section">
-    <h5>Section Title{{searchBirth}}</h5>
+    <h5>Section Title{{searchEndDate}}</h5>
     <div class="row">
         <form>
-            <div class="row right">
-                <div class="input-field col s4">
-                    <input ng-model="searchName" type="text" class="validate">
-                    <label for="first_name">name</label>
-                </div>
-                <div class="input-field col s3">
-                    <select class="browser-default" ng-model="searchGender">
-                        <option value="" disabled selected>--gender--</option>
-                        <option value="0">male</option>
-                        <option value="1">female</option>
-                    </select>
-                </div>
-                <div class="input-field col s4">
-                    <input ng-model="searchBirth" type="date" class="datepicker">
-                </div>
-                <div class="input-field col s1">
-                    <a class="waves-effect waves-light btn"><i class="mdi-action-search"></i></a>
-                </div>
+            <div class="input-field col s2">
+                <input ng-model="searchName" type="text" class="validate">
+                <label for="first_name">name</label>
+            </div>
+            <div class="input-field col s2">
+                <select class="browser-default" ng-model="searchGender">
+                    <option value="" disabled selected>--gender--</option>
+                    <option value="0">male</option>
+                    <option value="1">female</option>
+                </select>
+            </div>
+            <div class="input-field col s2">
+                <label for="first_name">from:</label>
+                <input type="text" pick-a-date="searchStartDate" max-date="searchEndDate" />
+            </div>
+            <div class="input-field col s2">
+                <label for="first_name">to:</label>
+                <input type="text" pick-a-date="searchEndDate" min-date="searchStartDate" />
+            </div>
+            <div class="input-field col s1">
+                <a class="waves-effect waves-light btn"><i class="mdi-action-search"></i></a>
             </div>
         </form>
     </div>

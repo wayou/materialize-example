@@ -10,10 +10,10 @@
 angular.module('maApp')
     .controller('MainCtrl', function($scope) {
         //initialize material ui
-        iniMD();
+        setTimeout(function() {
+            iniMD();
+        });
 
-        $scope.searchBirth = '2014-12-01';
-        
         //dummy data
         $scope.data = [{
             'id': 1,
