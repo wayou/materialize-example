@@ -1,1 +1,1 @@
-- [] make datepicker work with angular
+- [ ] make datepicker work with angular [refer1](https://github.com/amsul/pickadate.js/issues/528), [refer2](https://github.com/amsul/pickadate.js/issues/308), [refer3](http://www.codinginsight.com/angularjs-and-pickadate/)
