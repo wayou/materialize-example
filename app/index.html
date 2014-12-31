@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="http://static.tieba.baidu.com/tb/favicon.ico" />
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
+        <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="maApp">
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo"> <img src="images/tb-logo.png" alt="tieba">Sample</a>
+                    <ul id="nav-mobile" class="right side-nav">
+                        <li class="active"><a href="#/main">home</a></li>
+                        <li><a href="#/about">about</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div ng-view="" class="container"></div>
+        <footer class="light-blue">
+            <div class="container center">
+                &copy 2014 | <a class="white-text" href="tieba.baidu.com">百度贴吧</a>
+            </div>
+        </footer>
+        <!-- build:js(.) scripts/oldieshim.js -->
+        <!--[if lt IE 9]>
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <![endif]-->
+        <!-- endbuild -->
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-touch/angular-touch.js"></script>
+        <script src="bower_components/materialize/bin/materialize.js"></script>
+        <script src="bower_components/sweetalert/lib/sweet-alert.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/filters/num2text.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
